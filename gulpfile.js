@@ -41,11 +41,11 @@ gulp.task('bs', function() {
   });
 
   gulp.watch('assets/js/**/*.js').on("change", reload);
-  gulp.watch('site/**/*.*').on("change", reload);
+  gulp.watch(['site/**/*.php', 'site/**/*.yml']).on("change", reload);
+  gulp.watch('content/**/*.*').on("change", reload);
   gulp.watch('assets/scss/**/*.scss',
 		gulp.series('style'))
-			.on('change', browserSync.reload);
-  // gulp.watch('library/scss/**/*.scss', gulp.series('style', 'stylemin', 'loginstyle')).on('change', browserSync.reload);
+			.on('change', reload);
 });
 
 gulp.task('default', gulp.series('bs'));
