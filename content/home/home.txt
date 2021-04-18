@@ -1,1 +1,5 @@
-Title: Home
+Title: Accueil
+
+----
+
+Text: ... sweet home.
