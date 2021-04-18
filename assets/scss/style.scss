@@ -1,0 +1,14 @@
+// Starting somewhere...
+h1 {
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  a:not(:last-child) {
+    padding-right: 1em;
+  }
+}

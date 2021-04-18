@@ -22,6 +22,11 @@ package-lock.json
 /.vscode
 /.idea
 
+# Generated CSS
+# ---------------
+/assets/css/*
+!/assets/css/reset.css
+
 # -------------SECURITY-------------
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
