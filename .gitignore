@@ -13,6 +13,7 @@ Icon
 # Lock files
 # ---------------
 .lock
+package-lock.json
 
 # Editors
 # ---------------
@@ -46,3 +47,4 @@ Icon
 # License
 # ---------------
 /site/config/.license
+node_modules
