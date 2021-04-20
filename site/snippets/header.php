@@ -13,20 +13,20 @@
 
   <?= css([
     'assets/css/reset.css', // https://github.com/murtaugh/HTML5-Reset
-    'assets/css/style.css',
+    'assets/css/style.css', // generated from assets/scss/style.scss
     '@auto'
   ]) ?>
 </head>
 <body>
   <header class="header">
 
-    <a class="logo" href="<?= $site->url() ?>">
+    <a class="logo" <?php e($page->isHomePage(), 'aria-current') ?> href="<?= $site->url() ?>">
       <?= $site->title()->html() ?>
     </a>
 
     <nav class="menu">
       <?php foreach ($site->children()->listed() as $item): ?>
-      <a <?php e($item->isOpen(), 'aria-current ') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+      <a <?php e($item->isOpen(), 'aria-current') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
       <?php endforeach ?>
     </nav>
   </header>
